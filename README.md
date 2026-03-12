@@ -32,5 +32,6 @@ renv::restore()
 
 To run the application locally, run from the console:
 
+```bash
 shiny::runApp()
 ```
