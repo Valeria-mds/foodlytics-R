@@ -22,12 +22,15 @@ Clone the repository:
 ```bash
 git clone https://github.com/Valeria-mds/foodlytics-R.git
 cd foodlytics-R
+```
 
 To install the packages by restoring the environment:
 
 ```bash
 renv::restore()
+```
 
 To run the application locally, run from the console:
-shiny::runApp()
 
+shiny::runApp()
+```
