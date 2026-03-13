@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 library(DT)
 
-# ---- Load data ----
+# Load data 
 data_path <- "data/raw/cleaned_full_data.csv"
 df <- read.csv("data/cleaned_full_data.csv")
 
@@ -13,7 +13,7 @@ df$city <- gsub("Branpton", "Brampton", df$city, fixed = TRUE)
 # Choices for input
 CITIES <- sort(unique(df$city))
 
-# ---- UI ----
+# UI 
 ui <- fluidPage(
   
   titlePanel("Foodlytics Dashboard (R Shiny)"),
@@ -45,7 +45,7 @@ ui <- fluidPage(
   )
 )
 
-# ---- Server ----
+# Server
 server <- function(input, output, session) {
   
   # Reactive calculation
