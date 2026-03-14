@@ -27,21 +27,14 @@ ui <- fluidPage(
         label = "Select City",
         choices = CITIES,
         selected = CITIES[1]
-      )
-      
-    ),
-    
-    mainPanel(
-      
-      plotOutput("plot_cuisine"),
-      
+      ),
       br(),
-      
+      plotOutput("plot_cuisine", height = "400px")  # histogram under selector
+    ),
+    mainPanel(
       h4("Restaurants"),
       DTOutput("restaurant_table")
-      
     )
-    
   )
 )
 
