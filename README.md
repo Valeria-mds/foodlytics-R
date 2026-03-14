@@ -24,14 +24,15 @@ git clone https://github.com/Valeria-mds/foodlytics-R.git
 cd foodlytics-R
 ```
 
-To install the packages by restoring the environment:
+From Terminal from the root of the repository install the packages by restoring the environment, from **R base**:
 
 ```bash
 renv::restore()
 ```
 
-To run the application locally, run from the console:
+Then to run the application locally:
 
 ```bash
 shiny::runApp()
 ```
+
